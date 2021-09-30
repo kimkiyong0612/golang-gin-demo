@@ -20,6 +20,7 @@ func BookAdd(c *gin.Context) {
 	err = bookService.SetBook(&book)
 	if err != nil {
 		c.String(http.StatusInternalServerError, "Server Error")
+		return
 	}
 	c.JSON(http.StatusCreated, gin.H{
 		"status": "ok",
