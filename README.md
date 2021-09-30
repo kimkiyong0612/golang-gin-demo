@@ -1,4 +1,4 @@
-# golang-gin-demox
+# golang-gin-demo
 ## set up
 Create file `env.loacl`, and set DB info
 ```
